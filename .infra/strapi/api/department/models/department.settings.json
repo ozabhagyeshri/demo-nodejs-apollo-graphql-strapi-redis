@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departments",
+  "info": {
+    "name": "Department",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "employees": {
+      "collection": "employee",
+      "via": "department"
+    },
+    "Department_name": {
+      "type": "string"
+    }
+  }
+}
