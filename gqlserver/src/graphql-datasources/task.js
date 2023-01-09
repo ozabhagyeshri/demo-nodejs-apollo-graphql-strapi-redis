@@ -1,6 +1,6 @@
-const { BaseDS } = require('./base')
+const { EmployeeDS } = require('./employee')
 
-class TaskDS extends BaseDS {
+class TaskDS extends EmployeeDS {
     constructor(taskOpts) {
         super(taskOpts)
     }

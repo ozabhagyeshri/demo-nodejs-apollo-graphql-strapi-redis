@@ -12,6 +12,7 @@ module.exports = {
   // join resolvers
   Employee: {
     // resolver: (parent,args,context,info) <- options params
-    tasks: (_,__,context) => context.dataSources.tasks.getByEmpId(_.id)
+    department: (_,__,context) => context.dataSources.departments.getById(_.id),
+    tasks: (_,__,context) => context.dataSources.tasks.getByEmpId(_.id),
   },
 }
